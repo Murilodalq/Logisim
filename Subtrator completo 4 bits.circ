@@ -15,8 +15,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="valign" val="base"/>
     </tool>
   </lib>
-  <lib desc="file#C:\Users\Unicesumar\Downloads\Subtrator incompleto 1bit.circ" name="7"/>
-  <lib desc="file#C:\Users\Unicesumar\Downloads\Decodificador Binário para Algorismo Decimal.circ" name="8"/>
+  <lib desc="file#Subtrator incompleto 1bit.circ" name="7"/>
+  <lib desc="file#Decodificador Binário para Algorismo Decimal.circ" name="8"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -70,17 +70,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(120,140)" to="(120,160)"/>
     <wire from="(120,80)" to="(120,100)"/>
     <wire from="(250,90)" to="(250,240)"/>
-    <wire from="(150,290)" to="(150,310)"/>
-    <wire from="(220,260)" to="(220,280)"/>
-    <wire from="(220,200)" to="(220,220)"/>
-    <wire from="(220,140)" to="(220,160)"/>
     <wire from="(410,230)" to="(410,260)"/>
     <wire from="(490,150)" to="(490,180)"/>
     <wire from="(480,240)" to="(480,270)"/>
     <wire from="(310,210)" to="(310,240)"/>
     <wire from="(200,150)" to="(240,150)"/>
+    <wire from="(160,80)" to="(160,110)"/>
+    <wire from="(160,140)" to="(160,170)"/>
+    <wire from="(160,200)" to="(160,230)"/>
+    <wire from="(160,260)" to="(160,290)"/>
     <wire from="(320,200)" to="(350,200)"/>
     <wire from="(240,150)" to="(240,250)"/>
+    <wire from="(200,100)" to="(200,140)"/>
+    <wire from="(200,160)" to="(200,200)"/>
+    <wire from="(200,220)" to="(200,260)"/>
     <wire from="(390,130)" to="(390,170)"/>
     <wire from="(400,140)" to="(400,180)"/>
     <wire from="(410,150)" to="(410,190)"/>
@@ -102,14 +105,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(100,90)" to="(170,90)"/>
     <wire from="(390,210)" to="(390,280)"/>
     <wire from="(330,190)" to="(330,260)"/>
-    <wire from="(160,260)" to="(220,260)"/>
-    <wire from="(160,200)" to="(220,200)"/>
-    <wire from="(160,140)" to="(220,140)"/>
     <wire from="(200,90)" to="(250,90)"/>
     <wire from="(490,240)" to="(490,260)"/>
-    <wire from="(160,230)" to="(160,260)"/>
-    <wire from="(160,170)" to="(160,200)"/>
-    <wire from="(160,110)" to="(160,140)"/>
+    <wire from="(160,140)" to="(200,140)"/>
+    <wire from="(160,200)" to="(200,200)"/>
+    <wire from="(160,260)" to="(200,260)"/>
     <wire from="(310,210)" to="(350,210)"/>
     <wire from="(380,200)" to="(420,200)"/>
     <wire from="(340,180)" to="(340,270)"/>
@@ -120,26 +120,31 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(330,190)" to="(350,190)"/>
     <wire from="(380,180)" to="(400,180)"/>
     <wire from="(380,220)" to="(400,220)"/>
-    <wire from="(150,290)" to="(170,290)"/>
-    <wire from="(200,280)" to="(220,280)"/>
-    <wire from="(200,220)" to="(220,220)"/>
-    <wire from="(200,160)" to="(220,160)"/>
     <wire from="(470,240)" to="(470,280)"/>
     <wire from="(240,250)" to="(320,250)"/>
     <wire from="(380,170)" to="(390,170)"/>
     <wire from="(380,210)" to="(390,210)"/>
-    <wire from="(160,230)" to="(170,230)"/>
-    <wire from="(160,170)" to="(170,170)"/>
     <wire from="(160,110)" to="(170,110)"/>
+    <wire from="(160,170)" to="(170,170)"/>
+    <wire from="(160,230)" to="(170,230)"/>
+    <wire from="(160,290)" to="(170,290)"/>
     <wire from="(390,280)" to="(470,280)"/>
     <wire from="(400,270)" to="(480,270)"/>
     <wire from="(410,260)" to="(490,260)"/>
-    <comp lib="7" loc="(200,210)" name="main"/>
-    <comp lib="7" loc="(200,270)" name="main"/>
-    <comp lib="0" loc="(120,200)" name="Pin">
+    <comp lib="0" loc="(160,80)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="5" loc="(470,180)" name="7-Segment Display"/>
+    <comp lib="0" loc="(100,260)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="B2"/>
+      <a name="label" val="A3"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(120,260)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B3"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="7" loc="(200,90)" name="main"/>
@@ -149,10 +154,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A0"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="5" loc="(470,180)" name="7-Segment Display"/>
-    <comp lib="7" loc="(200,150)" name="main"/>
-    <comp lib="0" loc="(150,310)" name="Constant">
-      <a name="value" val="0x0"/>
+    <comp lib="0" loc="(100,140)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A1"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(120,140)" name="Pin">
       <a name="facing" val="south"/>
@@ -160,22 +166,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="B1"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(120,260)" name="Pin">
+    <comp lib="7" loc="(200,150)" name="main"/>
+    <comp lib="7" loc="(200,210)" name="main"/>
+    <comp lib="7" loc="(200,270)" name="main"/>
+    <comp lib="0" loc="(120,200)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="B3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(100,260)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A3"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(100,140)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="A1"/>
+      <a name="label" val="B2"/>
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(100,200)" name="Pin">
